@@ -8,4 +8,62 @@
     padding: 5em;
     font-family: $font1;
     text-align: center;        
+
+
+    @media(min-width: 40rem) {
+        width: 50%;
+    }
+    @media(min-width: 56rem) {
+        width: 33.3%;
+    }
+
+    .card {
+        margin-left: 10em;
+
+        display: grid;
+        place-items: center;
+        width: 100%;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+        transition: transform 0.5s;
+        transition: transform 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transform: scale(1.1);
+
+            .images {
+                opacity: 1;
+            }
+        }
+
+        .images {
+            max-width: 100%;
+            border-radius: 10px;    
+            opacity: 0.91;
+        }
+
+        .titel,
+        .time, .genre, .rating {
+            text-align: center;
+            font-size: 25px;
+            color: #32325d;
+            
+
+
+        }
+        .titel {
+            padding-top: 0.5em;
+        }
+        .genre {
+            color: $blue_purple;
+        }
+
+    
+    }
+
 }
