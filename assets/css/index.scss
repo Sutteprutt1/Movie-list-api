@@ -1,0 +1,11 @@
+#cards {
+    display: grid;
+    grid-template-columns: 15em 15em 15em;
+    grid-template-rows:  20em 20em;
+    gap: 5em 5em;
+    grid-auto-flow: row;
+    margin: 2em;
+    padding: 5em;
+    font-family: $font1;
+    text-align: center;        
+}

@@ -6,13 +6,13 @@ fetch('https://api.tvmaze.com/shows ').then((data) => {
 
     let data1 = "";
     completedata.map((values) => {
-        data1+= 
+        data1= 
         ` <div class="card">
-            <img src=${values.avatar} class="images" alt="img">
-            <h2 class="titel">${values.first_name}</h2>
-            <p class="time">${values.email}</p>
-            <h2 class="genre">${values.last_name}</h2>
-            <p class="rating">Jobtitle<p>
+            <img src=${values.image} class="images" alt="img">
+            <h2 class="titel">${values.name}</h2>
+            <p class="time">${values.runtime}</p>
+            <h2 class="genre">${values.genres}</h2>
+            <p class="rating"${values.rating}>Jobtitle<p>
         </div> `
     });
     document.getElementById("cards").innerHTML = data1;
