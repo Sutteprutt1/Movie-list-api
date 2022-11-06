@@ -30,7 +30,7 @@ body {
   font-weight: 900;
 }
 
-#cards_wrap {
+.wrapper #cards_wrap {
   padding: 25px;
   width: 100%;
   display: -webkit-box;
@@ -43,18 +43,19 @@ body {
       flex-wrap: wrap;
 }
 
-#cards_wrap .card_item {
+.wrapper #cards_wrap .card_item {
   padding: 15px 25px;
   width: 25%;
 }
 
-#cards_wrap .card_item .image {
+.wrapper #cards_wrap .card_item .image {
   width: 250px;
   height: 250px;
   margin-bottom: 5px;
+  border-radius: 5px;
 }
 
-#cards_wrap .card_item .titel {
+.wrapper #cards_wrap .card_item .titel {
   color: #e36686;
   font-weight: 900;
   letter-spacing: 2px;
@@ -65,14 +66,14 @@ body {
   text-overflow: ellipsis;
 }
 
-#cards_wrap .card_item .time, #cards_wrap .card_item .genres, #cards_wrap .card_item .rating {
+.wrapper #cards_wrap .card_item .time, .wrapper #cards_wrap .card_item .genres, .wrapper #cards_wrap .card_item .rating {
   color: #b6c0c2;
   font-size: 12px;
   font-weight: 100;
   margin: 5px 0 10px;
 }
 
-#cards_wrap .card_inner {
+.wrapper #cards_wrap .card_inner {
   background: #fff;
   border-radius: 5px;
   padding: 35px 20px;
