@@ -12,7 +12,7 @@ fetch('https://api.tvmaze.com/shows').then((data) => {
             <h2 class="titel">${values.name}</h2>
             <h2 class="time">${values.runtime} min</h2>
             <p class="genres">${values.genres}<p>
-            <p class="rating">${values.rating}</p>
+            <p class="rating">${values.rating.average}</p>
         </div> `
     });
     document.getElementById("cards").innerHTML = data1;
