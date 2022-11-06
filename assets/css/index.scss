@@ -1,3 +1,5 @@
+$purple_dark: #240b36;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,13 +7,14 @@
 	font-family: 'Noto Sans JP', sans-serif;
 }
 body {
-	background: #eeeff4;
+    background: rgb(195,20,50);
+    background: radial-gradient(circle, rgba(195,20,50,1) 20%, rgba(36,11,54,1) 100%);
 }
 .wrapper {
 	.header {
 		width: 100%;
 		height: 50px;
-		background: #e36686;
+		background: $purple_dark;
 		color: #fff;
 		text-align: center;
 		display: flex;
@@ -38,7 +41,7 @@ body {
                 border-radius: 5px;
             }
             .titel {
-                color: #e36686;
+                color: purple;
                 font-weight: 900;
                 letter-spacing: 2px;
                 text-transform: uppercase;
@@ -48,7 +51,6 @@ body {
                 text-overflow: ellipsis;
             }
             .time, .genres, .rating {
-                color: #b6c0c2;
                 font-size: 12px;
                 font-weight: 100;
                 margin: 5px 0 10px;
@@ -65,36 +67,4 @@ body {
         }
     }
     
-}
-@media screen and (max-width: 1024px) {
-	.cards_wrap {
-		.card_item {
-			width: 33%;
-		}
-	}
-}
-@media screen and (max-width: 768px) {
-	.cards_wrap {
-		.card_item {
-			width: 50%;
-		}
-	}
-	.wrapper {
-		.header {
-			font-size: 16px;
-			height: 60px;
-		}
-	}
-}
-@media screen and (max-width: 568px) {
-	.cards_wrap {
-		.card_item {
-			width: 100%;
-		}
-	}
-	.wrapper {
-		.header {
-			font-size: 14px;
-		}
-	}
 }
