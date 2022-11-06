@@ -1,19 +1,19 @@
 
-fetch('https://api.tvmaze.com/shows ').then((data) => {
+fetch('https://api.tvmaze.com/shows').then((data) => {
     return data.json();
 }).then((completedata) => {
-    console.log(completedata.data);
+    console.log(completedata);
 
     let data1 = "";
-    completedata.map.data((values) => {
+    completedata.map((values) => {
         data1= 
         ` <div class="card">
-            <img src=${values.image} class="images" alt="img">
+            <img src=${values.image.original} class="images" alt="img">
             <h2 class="titel">${values.name}</h2>
-            <p class="time">${values.runtime}</p>
-            <h2 class="genre">${values.genres}</h2>
-            <p class="rating"${values.rating}><p>
-            </div> `
+            <h2 class="time">${values.runtime} min</h2>
+            <p class="genres">${values.genres}<p>
+            <p class="rating">${values.rating}</p>
+        </div> `
     });
     document.getElementById("cards").innerHTML = data1;
 }).catch((err) => {
